@@ -209,6 +209,12 @@ a:hover, a:focus, a:active {
   margin-bottom: 0 !important;
 }
 
+@media (min-width: 992px) {
+	.first-section {
+		min-height: 95vh;
+	}
+}
+
 /*.first-section+section.resume-section {
 	border-top-left-radius: 120px;
 	background-repeat: 
