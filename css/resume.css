@@ -4,8 +4,16 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 
+:root {
+  --accent-color: #4affa4;
+  --primary-color: #5692ff;
+  --secondary-color: #2ca8a8;
+}
+
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   padding-top: 54px;
   color: #868e96;
 }
@@ -17,13 +25,23 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  .navbar-brand > span > img {
+    height: 2em;
+    width: 2em;
+    margin-bottom: 0 !important;
+  }
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
@@ -50,7 +68,9 @@ p.lead {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.5rem;
 }
 
@@ -58,13 +78,15 @@ p.lead {
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
-  color: #fff !important;
-  border-radius: 100%;
+  background-color: #fff;
+  color: #33383d !important;
+  /* border-radius: 100%; */
+  border-radius: 48%;
   text-align: center;
   font-size: 1.5rem;
   line-height: 3.5rem;
   margin-right: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .social-icons a:last-child {
@@ -72,7 +94,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: springgreen;
+  background-color: var(--accent-color);
 }
 
 .dev-icons {
@@ -80,7 +102,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: springgreen;
+  color: var(--accent-color);
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -176,46 +198,103 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: cornflowerblue !important;
+  background-color: var(--primary-color) !important;
 }
 
 .text-primary {
-  color: #2ca8a8 !important;
+  color: var(--secondary-color) !important;
 }
 
 a {
-  color: springgreen;
+  color: var(--accent-color);
 }
 
-a:hover, a:focus, a:active {
-  color: springgreen;
+a:hover,
+a:focus,
+a:active {
+  color: var(--accent-color);
 }
 
 /*===============*/
 
 .first-section {
-	background-color: cornflowerblue;
-	color: #fff;
-	border-bottom-right-radius: 120px;
+  background: linear-gradient(
+    to bottom right,
+    var(--primary-color),
+    var(--primary-color),
+    #9826ff
+  );
+  color: #fff;
+  border-bottom-right-radius: 120px;
 }
 
 .white-text {
-	color: #fff;
-}
-
-.navbar-brand>span>img.img-profile-nav {
-  height: 40px;
-  width: 40px;
-  margin-bottom: 0 !important;
+  color: #fff;
 }
 
 @media (min-width: 992px) {
-	.first-section {
-		min-height: 95vh;
-	}
+  .first-section {
+    min-height: 95vh;
+  }
 }
 
 /*.first-section+section.resume-section {
 	border-top-left-radius: 120px;
 	background-repeat: 
 }*/
+
+.btn-github {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-github:hover {
+  background-color: #00000093;
+}
+
+.btn-heroku {
+  background-color: #9e7cc1;
+  color: #fff;
+}
+
+.btn-heroku:hover {
+  background-color: #6f3ba0ad;
+  color: #000000;
+}
+
+.btn-android {
+  background-color: #2fdf5b;
+  color: #fff;
+}
+
+.btn-android:hover {
+  background-color: #28c44f;
+  color: #000000;
+}
+
+.appButtons a {
+  margin: 5px;
+  font-weight: 500;
+}
+
+.card {
+  margin: 1em 0;
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.detailList strong {
+  display: block;
+}
+
+.detailList li {
+  margin-bottom: 1em;
+}
+
+.detailList li .fa-li {
+  color: var(--accent-color);
+}
+
+hr {
+  background-color: #5cfdad4d;
+}
