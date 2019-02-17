@@ -39,30 +39,34 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #343a40;
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+  font-size: 4rem;
+  line-height: 4.2rem;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
+}
+
+div.lead {
+  margin-top: 1em;
 }
 
 .subheading {
@@ -71,7 +75,7 @@ p.lead {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .social-icons a {
@@ -93,7 +97,8 @@ p.lead {
   margin-right: 0;
 }
 
-.social-icons a:hover {
+.social-icons a:hover,
+.btn:hover {
   background-color: var(--accent-color);
 }
 
@@ -218,11 +223,12 @@ a:active {
 /*===============*/
 
 .first-section {
+  background: var(--primary-color); /* Fallback BG */
   background: linear-gradient(
     to bottom right,
     var(--primary-color),
     var(--primary-color),
-    #9826ff
+    #6c0fff
   );
   color: #fff;
   border-bottom-right-radius: 120px;
@@ -248,28 +254,14 @@ a:active {
   color: #fff;
 }
 
-.btn-github:hover {
-  background-color: #00000093;
-}
-
 .btn-heroku {
   background-color: #9e7cc1;
   color: #fff;
 }
 
-.btn-heroku:hover {
-  background-color: #6f3ba0ad;
-  color: #000000;
-}
-
 .btn-android {
   background-color: #2fdf5b;
   color: #fff;
-}
-
-.btn-android:hover {
-  background-color: #28c44f;
-  color: #000000;
 }
 
 .appButtons a {
