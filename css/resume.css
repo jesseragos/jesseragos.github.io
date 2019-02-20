@@ -31,6 +31,13 @@ body {
     width: 2em;
     margin-bottom: 0 !important;
   }
+  .first-section::before {
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
 }
 
 h1,
@@ -222,16 +229,101 @@ a:active {
 
 /*===============*/
 
+/* Has transitioning opacity animation of static gradient BG to another gradient BG */
 .first-section {
-  background: var(--primary-color); /* Fallback BG */
-  background: linear-gradient(
-    to bottom right,
+  position: relative;
+  min-height: 200px;
+  background-image: linear-gradient(
+    140deg,
     var(--primary-color),
     var(--primary-color),
-    #6c0fff
+    var(--primary-color),
+    #4b7aff,
+    #7a00ff
   );
+  z-index: 1;
   color: #fff;
   border-bottom-right-radius: 120px;
+}
+
+.first-section::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    60deg,
+    var(--primary-color),
+    var(--primary-color),
+    var(--primary-color),
+    #4b93ff,
+    #4ba4ff,
+    #00adff,
+    #00d0ff,
+    #00f3ff,
+    #00ffc4
+  );
+  z-index: -1;
+  opacity: 0;
+  color: #fff;
+  border-bottom-right-radius: 120px;
+  /* Animation */
+  -webkit-animation: gradientShift 10s ease-in-out infinite alternate;
+  -moz-animation: gradientShift 10s ease-in-out infinite alternate;
+  -ms-animation: gradientShift 10s ease-in-out infinite alternate;
+  -o-animation: gradientShift 10s ease-in-out infinite alternate;
+  animation: gradientShift 10s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes gradientShift {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes gradientShift {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes gradientShift {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes gradientShift {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes gradientShift {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.myName {
+  text-shadow: 0.2rem 0.2rem 1.2rem rgba(74, 74, 74, 0.49);
 }
 
 .white-text {
