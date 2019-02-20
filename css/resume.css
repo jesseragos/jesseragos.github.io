@@ -270,11 +270,11 @@ a:active {
   color: #fff;
   border-bottom-right-radius: 120px;
   /* Animation */
-  -webkit-animation: gradientShift 10s ease-in-out infinite alternate;
-  -moz-animation: gradientShift 10s ease-in-out infinite alternate;
-  -ms-animation: gradientShift 10s ease-in-out infinite alternate;
-  -o-animation: gradientShift 10s ease-in-out infinite alternate;
-  animation: gradientShift 10s ease-in-out infinite alternate;
+  -webkit-animation: gradientShift 7s ease-in-out infinite alternate;
+  -moz-animation: gradientShift 7s ease-in-out infinite alternate;
+  -ms-animation: gradientShift 7s ease-in-out infinite alternate;
+  -o-animation: gradientShift 7s ease-in-out infinite alternate;
+  animation: gradientShift 7s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes gradientShift {
