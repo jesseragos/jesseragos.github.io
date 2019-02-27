@@ -4,6 +4,9 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i");
+
 :root {
   --accent-color: #4affa4;
   --primary-color: #5692ff;
@@ -46,12 +49,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   /* text-transform: uppercase; */
-  color: #343a40;
+  /* color: #343a40; */
+  color: #000;
 }
 
 h1 {
@@ -79,8 +83,8 @@ div.lead {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.1rem;
 }
@@ -322,10 +326,6 @@ a:active {
   }
 }
 
-.myName {
-  text-shadow: 0.2rem 0.2rem 1.2rem rgba(74, 74, 74, 0.49);
-}
-
 .white-text {
   color: #fff;
 }
@@ -342,29 +342,27 @@ a:active {
 }*/
 
 .btn-github {
-  background-color: #000;
-  color: #fff;
+  border: 2px #000 solid;
+  color: #000;
 }
 
-.btn-heroku {
-  background-color: #9e7cc1;
-  color: #fff;
-}
-
-.btn-android {
-  background-color: #2fdf5b;
+.btn-demo {
+  /* background-color: #9e7cc1; */
+  background-color: var(--secondary-color);
   color: #fff;
 }
 
 .appButtons a {
   margin: 5px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .card {
   margin: 1em 0;
-  border: none;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-color: var(--secondary-color);
+  border-width: 2px;
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
+  box-shadow: 0.4rem 0.6em 0 #e8e8e8;
 }
 
 .detailList strong {
@@ -381,4 +379,8 @@ a:active {
 
 hr {
   background-color: #5cfdad4d;
+}
+
+.myName {
+  font-weight: 600;
 }
