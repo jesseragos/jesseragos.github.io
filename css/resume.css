@@ -385,3 +385,7 @@ hr {
 .myName {
   font-weight: 600;
 }
+
+.img-profile:hover {
+  box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.38);
+}
