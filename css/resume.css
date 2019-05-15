@@ -190,7 +190,8 @@ div.lead {
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
-  max-width: 75rem;
+  /* max-width: 75rem; */
+  max-width: 100%;
 }
 
 section.resume-section .resume-item .resume-date {
@@ -388,4 +389,20 @@ hr {
 
 .img-profile:hover {
   box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.38);
+}
+
+h1,
+h2,
+h3 {
+  word-break: break-word;
+}
+
+@media (min-width: 320px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
 }
