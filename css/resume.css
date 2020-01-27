@@ -281,7 +281,8 @@ a:active {
 }
 
 hr {
-  background-color: #5cfdad4d;
+  /*background-color: #5cfdad4d;*/
+  background-color: #f7f7f7;
 }
 
 .myName {
@@ -297,6 +298,14 @@ h2,
 h3 {
   word-break: break-word;
 }
+
+div#myCarousel {
+    padding: 0;
+}
+
+.carousel-indicators li {
+    background-color: #848484;
+  }
 
 
 
