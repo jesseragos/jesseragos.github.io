@@ -299,13 +299,13 @@ h3 {
   word-break: break-word;
 }
 
-div#carouselExampleIndicators {
+div#myCarousel {
     padding: 0;
 }
 
 .carousel-indicators li {
     background-color: #848484;
-  }
+}
 
 
 
