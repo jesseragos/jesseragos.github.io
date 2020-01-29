@@ -307,6 +307,14 @@ div#myCarousel {
     background-color: #848484;
 }
 
+.carousel-control-next {
+    background: linear-gradient(270deg, #1f1f1fb5, transparent);
+}
+
+.carousel-control-prev {
+    background: linear-gradient(90deg, #1f1f1fb5, transparent);
+}
+
 
 
 
