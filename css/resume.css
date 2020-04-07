@@ -89,6 +89,7 @@ div.lead {
 .social-icons a:hover,
 .btn:hover {
   background-color: var(--accent-color);
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .dev-icons {
