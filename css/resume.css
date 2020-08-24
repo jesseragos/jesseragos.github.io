@@ -318,7 +318,6 @@ div#myCarousel {
 
 
 
-
 /* Media breakpoints */
 
 @media (min-width: 1025px) {
@@ -413,6 +412,7 @@ div#myCarousel {
     width: 2em;
     margin-bottom: 0 !important;
   }
+  
   .first-section::before {
     -webkit-animation: none !important;
     -moz-animation: none !important;
@@ -426,13 +426,18 @@ div#myCarousel {
   section.resume-section {
     min-height: 100vh;
   }
+
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
+
+  div#wp-sites {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
-
-@media (min-width: 320px) {
+@media (max-width: 480px) {
   h2 {
     font-size: 2.5rem;
   }
