@@ -54,6 +54,10 @@ p.lead {
   font-weight: 400;
 }
 
+a {
+  font-weight: 900;
+}
+
 div.lead {
   margin-top: 1em;
 }
