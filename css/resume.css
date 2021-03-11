@@ -100,9 +100,14 @@ div.lead {
   font-size: 3rem;
 }
 
-.dev-icons .list-inline-item i:hover {
-  color: var(--accent-color);
+.dev-icons img {
+  width: 3rem;
+  vertical-align: baseline;
 }
+
+/* .dev-icons .list-inline-item i:hover {
+  color: var(--accent-color);
+} */
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
@@ -408,6 +413,42 @@ div#myCarousel {
     min-height: 95vh;
   }
 
+}
+
+.fab.fa-html5 {
+  color: #fd7b3f;
+}
+
+.fab.fa-css3-alt {
+  color: #337be6;
+}
+
+.fab.fa-js-square {
+  color: #ffc107;
+}
+
+.fab.fa-adobe {
+  color: #e91e45;
+}
+
+.fab.fa-figma {
+  color: #47db7a;
+}
+
+.fab.fa-git {
+  color: #fb4848;
+}
+
+.fab.fa-node-js {
+  color: #8bc34a;
+}
+
+.fab.fa-npm {
+  color: #ff200f;
+}
+
+.fab.fa-wordpress {
+  color: #0e86d6;
 }
 
 @media (max-width: 992px) {
