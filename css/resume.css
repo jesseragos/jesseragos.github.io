@@ -377,7 +377,7 @@ div#myCarousel {
   #sideNav .navbar-brand .img-profile {
     max-width: 6rem;
     max-height: 8rem;
-    /*border: 0.5rem solid rgba(255, 255, 255, 0.2);*/
+    border: 3px solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
     display: -webkit-box;
