@@ -6,6 +6,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 
 :root {
   --accent-color: #4affa4;
@@ -85,6 +86,7 @@ div.lead {
   margin-right: 1rem;
   margin-bottom: 20px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  text-decoration: none;
 }
 
 .social-icons a:last-child {
@@ -95,6 +97,10 @@ div.lead {
 .btn:hover {
   background-color: var(--accent-color);
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.social-icons a .cgt-font {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .dev-icons {
@@ -110,6 +116,10 @@ div.lead {
   font-size: 15px;
   font-weight: bold;
   margin: 0 10px;
+}
+
+.img-profile {
+  border: 0.15em solid rgba(255, 255, 255, 0.2);
 }
 
 /* .dev-icons .list-inline-item i:hover {
@@ -377,8 +387,7 @@ div#myCarousel {
   #sideNav .navbar-brand .img-profile {
     max-width: 6rem;
     max-height: 8rem;
-    border: 3px solid rgba(255, 255, 255, 0.2);
-  }
+  }  
   #sideNav .navbar-collapse {
     display: -webkit-box;
     display: -ms-flexbox;
